@@ -1,0 +1,491 @@
+!SESSION 2014-07-11 13:58:42.100 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Mike/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Mike/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-07-11 13:59:19.206
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-07-11 13:59:22.425
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-11 13:59:22.425
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-11 13:59:22.425
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+!SESSION 2014-07-11 14:23:26.730 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Mike/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Mike/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-07-11 14:23:34.918
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-07-11 14:23:34.952
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-11 14:23:34.952
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-11 14:23:34.952
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.e4.ui.css.core 4 0 2014-07-11 14:23:48.759
+!MESSAGE CSS property 'maximize-visible' has been deprecated: renamed as swt-maximize-visible
+
+!ENTRY org.eclipse.e4.ui.css.core 4 0 2014-07-11 14:23:48.763
+!MESSAGE CSS property 'minimize-visible' has been deprecated: renamed as swt-minimize-visible
+
+!ENTRY com.aptana.scripting 4 0 2014-07-11 14:23:49.549
+!MESSAGE (Build 3.2.3.201404181442) [ERROR]  Failed to load bundle /Applications/Titanium Studio/plugins/com.appcelerator.titanium.core_3.1.2.1397854819/bundles/titanium_mobile.ruble
+!STACK 0
+Can't construct a java object for !ruby/object:Ruble::Bundle; exception=Invalid tag: !ruby/object:Ruble::Bundle
+ in "<reader>", line 1, column 5:
+    --- !ruby/object:Ruble::Bundle
+        ^
+
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructYamlObject.construct(Constructor.java:325)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: org.yaml.snakeyaml.error.YAMLException: Invalid tag: !ruby/object:Ruble::Bundle
+	at org.yaml.snakeyaml.nodes.Tag.getClassName(Tag.java:108)
+	at org.yaml.snakeyaml.constructor.Constructor.getClassForNode(Constructor.java:620)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructYamlObject.getConstructor(Constructor.java:313)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructYamlObject.construct(Constructor.java:323)
+	... 9 more
+!SESSION 2014-07-11 14:24:43.053 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Mike/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Mike/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-07-11 14:24:46.906
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-07-11 14:24:47.000
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-11 14:24:47.000
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-11 14:24:47.000
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.e4.ui.css.core 4 0 2014-07-11 14:25:05.021
+!MESSAGE CSS property 'maximize-visible' has been deprecated: renamed as swt-maximize-visible
+
+!ENTRY org.eclipse.e4.ui.css.core 4 0 2014-07-11 14:25:05.023
+!MESSAGE CSS property 'minimize-visible' has been deprecated: renamed as swt-minimize-visible
+!SESSION 2014-07-17 21:52:53.438 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Mike/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Mike/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-07-17 21:53:07.017
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-07-17 21:53:08.980
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-17 21:53:08.980
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-17 21:53:08.980
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.e4.ui.css.core 4 0 2014-07-17 21:53:23.505
+!MESSAGE CSS property 'maximize-visible' has been deprecated: renamed as swt-maximize-visible
+
+!ENTRY org.eclipse.e4.ui.css.core 4 0 2014-07-17 21:53:23.529
+!MESSAGE CSS property 'minimize-visible' has been deprecated: renamed as swt-minimize-visible
+
+!ENTRY com.aptana.core 4 1 2014-07-17 21:55:10.438
+!MESSAGE sudo: a password is required
+
+!ENTRY com.appcelerator.titanium.update.core 4 4 2014-07-17 21:58:58.934
+!MESSAGE Error encountered during update
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 4 2014-07-17 21:58:58.934
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 2 org.eclipse.equinox.p2.engine 4 0 2014-07-17 21:58:58.934
+!MESSAGE session context was:(profile=profile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.934
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.acs.core,1.0.0.1402675616
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.934
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.acs.ui,1.0.0.1402078034
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.alloy.core,2.2.0.1404416074
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.alloy.ui,2.2.0.1402949661
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.alloy.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.android.core,1.0.0.1404432521
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.android.core.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.android.ui,1.0.0.1403277168
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.android.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.aptana.editor.common.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.aptana.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.blackberry.core,1.0.0.1401147702
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.935
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.blackberry.core.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.blackberry.ui,1.0.0.1403277168
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.branding,3.3.0.1403045376
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.core,3.1.2.1405005598
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.core.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ios.core,1.0.0.1401409521
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ios.core.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ios.ui,1.0.0.1401409521
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ios.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.mobileweb.core,1.0.0.1400702874
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.mobileweb.ui,1.0.0.1401735552
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.mobileweb.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.nodejs.core,1.0.0.1400202113
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.936
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.publish,1.0.0.1401996281
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.rcp,3.3.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.rcp.studio,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.studio.rcp.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ui,1.1.0.1403277168
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ui.ide,1.1.0.1403631198
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ui.ide.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.update.core,1.0.0.1402949908
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.update.core.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.update.ui,2.1.1.1400202113
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.update.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.usage,1.0.0.1400702874
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.937
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.branding,3.6.0
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.browser,3.0.0.1395863261
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.buildpath.core,3.1.0.1394464700
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.core,3.3.0.1402537589
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.core.epl,3.0.0.1400178275
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.core.io,3.0.3.1397143515
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.common,3.0.3.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.epl,3.0.0.1398883419
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.html,3.0.3.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.js.formatter,3.0.3.1401999932
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.xml,3.0.0.1400001661
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.xml.formatter,3.0.0.1392130850
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.explorer,3.0.0.1397622810
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.938
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.filewatcher,3.0.1.1391643412
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.formatter.epl,3.2.0.1398440744
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.git.core,3.0.0.1401922096
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.git.ui,3.0.3.1397051106
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.index.core,3.0.0.1397747704
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.jira.core,1.0.0.1398100904
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.jira.ui,1.0.0.1398100904
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.js.core,3.0.0.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.js.debug.core,3.0.3.1399489002
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.js.debug.ui,3.0.0.1397674205
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.portal.ui,3.0.0.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.projects,3.0.0.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.samples.ui,3.0.0.1401916398
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.scripting,3.1.0.1397674205
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.939
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.scripting.ui,3.0.0.1397622810
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.terminal,3.0.0.1397622810
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.theme,3.0.0.1395756310
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.ui,3.1.4.1400597012
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.ui.epl,3.0.0.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.ui.io,3.0.0.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.usage,3.0.0.1402537589
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.workbench,3.0.0.1392044712
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.xml.core,1.0.0.1392130850
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: osgi.bundle,net.jeeeyul.eclipse.themes,1.7.4.1395329541
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: osgi.bundle,org.chromium.debug.ui,0.3.9.1400202113
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.appcelerator.titanium.feature,3.3.0.1404937631-7879078H5FGBIGVU1LbIGJ3NFGz-
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.appcelerator.titanium.feature.rcp,3.3.0.201407100905-827_FA2FF7cLQz0ybQ3BM-8GA189
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.940
+!MESSAGE No repository found containing: binary,com.appcelerator.titanium.feature.rcp_root,3.3.0.201407100905-827_FA2FF7cLQz0ybQ3BM-8GA189
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.941
+!MESSAGE No repository found containing: binary,com.appcelerator.titanium.rcp.product.root.feature_root,3.3.0.201407100905-10072014090701
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.941
+!MESSAGE No repository found containing: binary,com.appcelerator.titanium.rcp.product_root.cocoa.macosx.x86,3.3.0.201407100905-10072014090701
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.941
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.appcelerator.titanium.studio,3.3.1.1405005598-7X7V7u8RemU3bPmuv
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.941
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.debug.core,3.0.3
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.941
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.js,3.0.3
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 21:58:58.941
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.aptana.feature,3.6.0.1402537589-B27k88Bma9kxYA5ZR9833355984B
+!SESSION 2014-07-17 22:02:47.114 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Mike/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Mike/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-07-17 22:02:50.395
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-07-17 22:02:50.484
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-17 22:02:50.484
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-17 22:02:50.484
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY org.eclipse.e4.ui.css.core 4 0 2014-07-17 22:02:52.473
+!MESSAGE CSS property 'maximize-visible' has been deprecated: renamed as swt-maximize-visible
+
+!ENTRY org.eclipse.e4.ui.css.core 4 0 2014-07-17 22:02:52.476
+!MESSAGE CSS property 'minimize-visible' has been deprecated: renamed as swt-minimize-visible
+
+!ENTRY com.appcelerator.titanium.update.core 4 4 2014-07-17 22:03:39.360
+!MESSAGE Error encountered during update
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 4 2014-07-17 22:03:39.360
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 2 org.eclipse.equinox.p2.engine 4 0 2014-07-17 22:03:39.360
+!MESSAGE session context was:(profile=profile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.360
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.acs.core,1.0.0.1402675616
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.360
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.acs.ui,1.0.0.1402078034
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.361
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.alloy.core,2.2.0.1404416074
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.361
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.alloy.ui,2.2.0.1402949661
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.361
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.alloy.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.361
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.android.core,1.0.0.1404432521
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.361
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.android.core.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.361
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.android.ui,1.0.0.1403277168
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.361
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.android.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.361
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.aptana.editor.common.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.362
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.aptana.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.362
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.blackberry.core,1.0.0.1401147702
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.362
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.blackberry.core.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.362
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.blackberry.ui,1.0.0.1403277168
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.362
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.branding,3.3.0.1403045376
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.362
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.core,3.1.2.1405005598
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.362
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.core.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.362
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ios.core,1.0.0.1401409521
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.363
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ios.core.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.363
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ios.ui,1.0.0.1401409521
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.363
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ios.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.363
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.mobileweb.core,1.0.0.1400702874
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.363
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.mobileweb.ui,1.0.0.1401735552
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.363
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.mobileweb.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.363
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.nodejs.core,1.0.0.1400202113
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.363
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.publish,1.0.0.1401996281
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.364
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.rcp,3.3.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.364
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.rcp.studio,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.364
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.studio.rcp.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.364
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ui,1.1.0.1403277168
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.364
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ui.ide,1.1.0.1403631198
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.364
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ui.ide.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.364
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.364
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.update.core,1.0.0.1402949908
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.364
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.update.core.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.365
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.update.ui,2.1.1.1400202113
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.365
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.update.ui.override,1.0.0.201407100905
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.365
+!MESSAGE No repository found containing: osgi.bundle,com.appcelerator.titanium.usage,1.0.0.1400702874
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.365
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.branding,3.6.0
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.365
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.browser,3.0.0.1395863261
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.365
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.buildpath.core,3.1.0.1394464700
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.365
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.core,3.3.0.1402537589
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.366
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.core.epl,3.0.0.1400178275
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.366
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.core.io,3.0.3.1397143515
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.366
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.common,3.0.3.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.366
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.epl,3.0.0.1398883419
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.366
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.html,3.0.3.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.366
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.js.formatter,3.0.3.1401999932
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.366
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.xml,3.0.0.1400001661
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.366
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.xml.formatter,3.0.0.1392130850
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.366
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.explorer,3.0.0.1397622810
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.367
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.filewatcher,3.0.1.1391643412
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.367
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.formatter.epl,3.2.0.1398440744
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.367
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.git.core,3.0.0.1401922096
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.367
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.git.ui,3.0.3.1397051106
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.367
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.index.core,3.0.0.1397747704
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.367
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.jira.core,1.0.0.1398100904
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.367
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.jira.ui,1.0.0.1398100904
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.367
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.js.core,3.0.0.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.368
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.js.debug.core,3.0.3.1399489002
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.368
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.js.debug.ui,3.0.0.1397674205
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.368
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.portal.ui,3.0.0.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.368
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.projects,3.0.0.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.368
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.samples.ui,3.0.0.1401916398
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.368
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.scripting,3.1.0.1397674205
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.369
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.scripting.ui,3.0.0.1397622810
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.369
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.terminal,3.0.0.1397622810
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.369
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.theme,3.0.0.1395756310
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.369
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.ui,3.1.4.1400597012
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.369
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.ui.epl,3.0.0.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.ui.io,3.0.0.1400201987
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.usage,3.0.0.1402537589
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.workbench,3.0.0.1392044712
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.xml.core,1.0.0.1392130850
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: osgi.bundle,net.jeeeyul.eclipse.themes,1.7.4.1395329541
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: osgi.bundle,org.chromium.debug.ui,0.3.9.1400202113
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.appcelerator.titanium.feature,3.3.0.1404937631-7879078H5FGBIGVU1LbIGJ3NFGz-
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.appcelerator.titanium.feature.rcp,3.3.0.201407100905-827_FA2FF7cLQz0ybQ3BM-8GA189
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: binary,com.appcelerator.titanium.feature.rcp_root,3.3.0.201407100905-827_FA2FF7cLQz0ybQ3BM-8GA189
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: binary,com.appcelerator.titanium.rcp.product.root.feature_root,3.3.0.201407100905-10072014090701
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.370
+!MESSAGE No repository found containing: binary,com.appcelerator.titanium.rcp.product_root.cocoa.macosx.x86,3.3.0.201407100905-10072014090701
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.371
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.appcelerator.titanium.studio,3.3.1.1405005598-7X7V7u8RemU3bPmuv
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.371
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.debug.core,3.0.3
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.371
+!MESSAGE No repository found containing: osgi.bundle,com.aptana.editor.js,3.0.3
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 0 2014-07-17 22:03:39.371
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.aptana.feature,3.6.0.1402537589-B27k88Bma9kxYA5ZR9833355984B
