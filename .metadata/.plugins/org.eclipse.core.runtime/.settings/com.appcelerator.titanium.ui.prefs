@@ -1,7 +1,7 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1405648973510
+LAST_LAUNCH_TIMESTAMP=1405718606086
 Wielgosz_Michael_AboutMe\:launchMode=run
-Wielgosz_Michael_AboutMe\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.iPad
+Wielgosz_Michael_AboutMe\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch)
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103
