@@ -37,23 +37,21 @@ var displayAnswerView = function(dataSource) {
     // Label for question
     var answerQuestion = Ti.UI.createLabel({
         text: dataSource.question,
-        font: {fontSize: 22},
+        font: {fontSize: 24},
         textAlign: "center",
         color: "#000",
-        top: 5,
-        left: 5,
-        right: 5
+        top: 5
     });
 
     // Label to display description
     var answerLabel = Ti.UI.createLabel({
         text: dataSource.answer,
-        font: {fontSize: 14},
-        color: "#333",
+        font: {fontSize: 12},
+        color: "#000",
         textAlign: "center",
         top: 10,
-        left: 5,
-        right: 5
+        left: 10,
+        right: 10
     });
 
     // Add each window element

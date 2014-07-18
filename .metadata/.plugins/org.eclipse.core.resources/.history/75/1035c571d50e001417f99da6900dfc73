@@ -18,7 +18,7 @@ var questionData = [{
 	"mdv_reason" : {
 		"short_question" : "Why Mobile Development?",
 		"question" : "Why are you in the Mobile Development Program?",
-		"answer" : "Since I was about 8 years old I have always had a passion for programming. In 2007 I realized the potential of the future for mobile development and my focus was turned on development in the mobile platform. I started to develop features for custom Android ROM projects, which evolved into building my own custom ROM as well as different Android apps."
+		"answer" : "Since I was about 8 years old I have always had a passion for programming. In 2007 I realized the potential of the future for mobile development and my focus has turned on development in the mobile platform."
 	},
 	"comfort_javascript" : {
 		"short_question" : "Comfort with Javascript",

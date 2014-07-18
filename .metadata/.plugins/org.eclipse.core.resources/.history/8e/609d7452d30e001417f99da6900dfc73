@@ -12,7 +12,7 @@ var bgColor = "#202020",
 
 // Main app window
 var mainWindow = Ti.UI.createWindow({
-	title : "About Me",
+	title : "Top Smartphones",
 	backgroundColor : bgColor,
 	backgroundImage : bgImage,
 	backgroundRepeat : true
@@ -23,44 +23,18 @@ var navWindow = Ti.UI.iOS.createNavigationWindow({
 	window : mainWindow
 });
 
-var displayAnswerView = function(dataSource) {
+// Function to dynamically open windows
+var openPageWindow = function() {
+	var pageWindow = Ti.UI.createWindow({
+		backgroundColor : bgColor,
+		backgroundImage : bgImage,
+		backgroundRepeat : true,
+		title : this.text,
+		url : this.windowURL,
+		nav : navWindow
+	});
 
-    // Window for description
-    var answerWindow = Ti.UI.createWindow({
-        backgroundColor: "#fff",
-        backgroundImage: "background.png",
-        backgroundRepeat: true,
-        title: dataSource.title,
-        layout: "vertical"
-    });
-
-    // Label for question
-    var answerQuestion = Ti.UI.createLabel({
-        text: dataSource.question,
-        font: {fontSize: 22},
-        textAlign: "center",
-        color: "#000",
-        top: 5,
-        left: 5,
-        right: 5
-    });
-
-    // Label to display description
-    var answerLabel = Ti.UI.createLabel({
-        text: dataSource.answer,
-        font: {fontSize: 14},
-        color: "#333",
-        textAlign: "center",
-        top: 10,
-        left: 5,
-        right: 5
-    });
-
-    // Add each window element
-    answerWindow.add(answerQuestion);
-    answerWindow.add(answerLabel);
-
-    navWindow.openWindow(answerWindow);
+	navWindow.openWindow(pageWindow);
 };
 
 // Table view for JSON content
@@ -95,9 +69,9 @@ for (var i = 0; i < jsonData.length; i++) {
 questionTable.appendSection(questionSection);
 
 // Event listener for table
-questionTable.addEventListener("click", function(clickEvent){
-	displayAnswerView(clickEvent.source);
-});
+/*questionTable.addEventListener("click", function(clickEvent){
+ displayDescriptionView(clickEvent.source);
+ });*/
 
 mainWindow.add(questionTable);
 

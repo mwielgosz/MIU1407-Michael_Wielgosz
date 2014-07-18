@@ -23,10 +23,10 @@ var navWindow = Ti.UI.iOS.createNavigationWindow({
 	window : mainWindow
 });
 
-var displayAnswerView = function(dataSource) {
+var displayDescriptionView = function(dataSource) {
 
     // Window for description
-    var answerWindow = Ti.UI.createWindow({
+    var descWindow = Ti.UI.createWindow({
         backgroundColor: "#fff",
         backgroundImage: "background.png",
         backgroundRepeat: true,
@@ -35,32 +35,30 @@ var displayAnswerView = function(dataSource) {
     });
 
     // Label for question
-    var answerQuestion = Ti.UI.createLabel({
+    var descQuestion = Ti.UI.createLabel({
         text: dataSource.question,
-        font: {fontSize: 22},
+        font: {fontSize: 30, fontFamily: "Copperplate"},
         textAlign: "center",
         color: "#000",
-        top: 5,
-        left: 5,
-        right: 5
+        top: 5
     });
 
     // Label to display description
-    var answerLabel = Ti.UI.createLabel({
+    var descLabel = Ti.UI.createLabel({
         text: dataSource.answer,
-        font: {fontSize: 14},
-        color: "#333",
+        font: {fontSize: 12, fontFamily: "Optima-Regular"},
+        color: "#000",
         textAlign: "center",
         top: 10,
-        left: 5,
-        right: 5
+        left: 10,
+        right: 10
     });
 
     // Add each window element
-    answerWindow.add(answerQuestion);
-    answerWindow.add(answerLabel);
+    descWindow.add(descQuestion);
+    descWindow.add(descLabel);
 
-    navWindow.openWindow(answerWindow);
+    navWindow.openWindow(descWindow);
 };
 
 // Table view for JSON content
@@ -96,7 +94,7 @@ questionTable.appendSection(questionSection);
 
 // Event listener for table
 questionTable.addEventListener("click", function(clickEvent){
-	displayAnswerView(clickEvent.source);
+	displayDescriptionView(clickEvent.source);
 });
 
 mainWindow.add(questionTable);
