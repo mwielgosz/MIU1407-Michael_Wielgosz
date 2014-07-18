@@ -45,6 +45,7 @@ var questionTable = Ti.UI.createTableView({
 
 // Loop to fill in question table
 for (var i = 0; i < jsonData.length; i++) {
+	
 	// Table view section
 	var questionSection = Ti.UI.createTableViewSection({
 		headerTitle : "Questions about me",
@@ -52,6 +53,7 @@ for (var i = 0; i < jsonData.length; i++) {
 	});
 
 	for (i2 in jsonData[i]) {
+		
 		// Dynamically create each table view row
 		var questionTableRow = Ti.UI.createTableViewRow({
 			title : jsonData[i][i2].question,
@@ -64,7 +66,7 @@ for (var i = 0; i < jsonData.length; i++) {
 	}
 }
 
-// Append TableSection to TableView
+// Fill table with data
 questionTable.appendSection(questionSection);
 
 // Event listener for table
