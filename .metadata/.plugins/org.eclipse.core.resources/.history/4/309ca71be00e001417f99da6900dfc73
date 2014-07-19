@@ -23,7 +23,6 @@ var navWindow = Ti.UI.iOS.createNavigationWindow({
 	window : mainWindow
 });
 
-// Function for TableViewRow clicks
 var displayAnswerView = function(dataSource) {
 
     // Window for description
@@ -38,7 +37,7 @@ var displayAnswerView = function(dataSource) {
     // Label for question
     var answerQuestion = Ti.UI.createLabel({
         text: dataSource.question,
-        font: {fontSize: 20},
+        font: {fontSize: 22},
         textAlign: "center",
         color: "#000",
         top: 5,
@@ -46,7 +45,7 @@ var displayAnswerView = function(dataSource) {
         right: 5
     });
 
-    // Label to display question answer
+    // Label to display description
     var answerLabel = Ti.UI.createLabel({
         text: dataSource.answer,
         font: {fontSize: 14},
@@ -70,7 +69,7 @@ var questionTable = Ti.UI.createTableView({
 	top : 0
 });
 
-// Loop to fill in table
+// Loop to fill in question table
 for (var i = 0; i < jsonData.length; i++) {
 	// Table view section
 	var questionSection = Ti.UI.createTableViewSection({
@@ -78,7 +77,6 @@ for (var i = 0; i < jsonData.length; i++) {
 		top : 0
 	});
 
-	// Secondary loop for question/answer content
 	for (i2 in jsonData[i]) {
 		// Dynamically create each table view row
 		var questionTableRow = Ti.UI.createTableViewRow({
