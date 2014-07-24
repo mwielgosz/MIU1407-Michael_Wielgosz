@@ -1,0 +1,23 @@
+{
+	"target": "simulator",
+	"deployType": "development",
+	"deviceFamily": "iphone",
+	"iosSdkPath": "/Users/Mike/Library/Application Support/Titanium/mobilesdk/osx/3.3.0.GA/iphone",
+	"tiCoreHash": "77157e1ffaec640cf559356a147b6a4c",
+	"modulesHash": "d41d8cd98f00b204e9800998ecf8427e",
+	"modulesNativeHash": "d41d8cd98f00b204e9800998ecf8427e",
+	"gitHash": "787cd39",
+	"name": "Wielgosz_Michael_InformationalApp",
+	"id": "wielgosz.michael.informationalapp",
+	"analytics": true,
+	"publisher": "Michael Wielgosz",
+	"url": "http://",
+	"version": "1.0",
+	"description": "Mobile Interfaces & Usability\nInformational App\nTerm 1407",
+	"copyright": "2014 by Mike Wielgosz",
+	"guid": "7ab18eed-51cd-4d51-b7cd-00e43fc1a69d",
+	"skipJSMinification": true,
+	"forceCopy": false,
+	"forceCopyAll": false,
+	"encryptJS": false
+}

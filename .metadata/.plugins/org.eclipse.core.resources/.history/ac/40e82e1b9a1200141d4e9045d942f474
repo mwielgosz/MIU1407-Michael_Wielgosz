@@ -1,0 +1,145 @@
+// JSON data for phone data
+
+var phoneData = {
+    "iphone_5c":{
+        "name": "Apple iPhone 5c",
+        "img": "phone-images/apple_iphone_5c.png",
+        "specs": [
+            {
+                "type": "Processor",
+                "description": "Single core, 1000 MHz, Scorpion CPU with an Adreno 200 GPU",
+                "icon": "icon-images/processor.png"
+            },
+            {
+                "type": "System Memory",
+                "description": "512 MB RAM / 512 MB ROM with microSD/microSDHC storgae expansion up to 32 GB",
+                "icon": "icon-images/memory.png"
+            },
+            {
+                "type": "Screen Details",
+                "description": "3.7 inch display utilizing AMOLED technology with a pixel density of 252 ppi (pixels per inch)",
+                "icon": "icon-images/screen-size.png"
+            },
+            {
+                "type": "Available Radios",
+                "description": "GSM bands: 850mHz, 900mHz, 1800mHz, 1900mHz\nUTMS bands: 850mHz, 1900mHz, 2100mHz\nHSDPA speed up to 7.2Mb/s\nHSUPA speed up to 2Mb/s",
+                "icon": "icon-images/radio.png"
+            }
+        ]
+    },
+    "Nexus S":{
+        "name": "Nexus S",
+        "headTitle": "Nexus S Specifications",
+        "footTitle": "Specifications",
+        "img": "nexus-images/1-nexus-s.png",
+        "device": [
+            {
+                "type": "Processor",
+                "description": "Single core, 1000 MHz, ARM Cortex-A8 CPU with a PowerVR SGX540 GPU",
+                "icon": "icon-images/processor.png"
+            },
+            {
+                "type": "System Memory",
+                "description": "512 MB RAM with 16 GB of built-in storage",
+                "icon": "icon-images/memory.png"
+            },
+            {
+                "type": "Screen Details",
+                "description": "4.0 inch display utilizing Super AMOLED technology with a pixel density of 233 ppi (pixels per inch)",
+                "icon": "icon-images/screen-size.png"
+            },
+            {
+                "type": "Available Radios",
+                "description": "GSM bands: 850mHz, 900mHz, 1800mHz, 1900mHz\nUTMS bands: 900mHz, 1700/2100mHz, 2100mHz\nHSDPA speed up to 7.2Mb/s\nHSUPA speed up to 5.76Mb/s",
+                "icon": "icon-images/radio.png"
+            }
+        ]
+    },
+    "Galaxy Nexus":{
+        "name": "Galaxy Nexus",
+        "headTitle": "Galaxy Nexus Specifications",
+        "footTitle": "Specifications",
+        "img": "nexus-images/2-galaxy-nexus.png",
+        "device": [
+            {
+                "type": "Processor",
+                "description": "Dual core, 1200 MHz, ARM Cortex-A9 CPU with a PowerVR SGX540 GPU",
+                "icon": "icon-images/processor.png"
+            },
+            {
+                "type": "System Memory",
+                "description": "1024 MB RAM with 32 GB of built-in storage",
+                "icon": "icon-images/memory.png"
+            },
+            {
+                "type": "Screen Details",
+                "description": "4.7 inch display utilizing Super AMOLED technology with a pixel density of 316 ppi (pixels per inch)",
+                "icon": "icon-images/screen-size.png"
+            },
+            {
+                "type": "Available Radios",
+                "description": "GSM bands: 850mHz, 900mHz, 1800mHz, 1900mHz\nUTMS bands: 850mHz, 900mHz, 1700/2100mHz, 1900mHz, 2100mHz\nHSDPA+ speed up to 21.1Mb/s\nHSDPA speed up to 14.4Mb/s\nHSUPA speed up to 5.76Mb/s",
+                "icon": "icon-images/radio.png"
+            }
+        ]
+    },
+    "Nexus 4":{
+        "name": "Nexus 4",
+        "headTitle": "Nexus 4 Specifications",
+        "footTitle": "Specifications",
+        "img": "nexus-images/3-nexus-4.png",
+        "device": [
+            {
+                "type": "Processor",
+                "description": "Quad core, 1500 MHz, Krait CPU with an Adreno 320 GPU",
+                "icon": "icon-images/processor.png"
+            },
+            {
+                "type": "System Memory",
+                "description": "2048 MB RAM with 8 or 16 GB of built-in storage",
+                "icon": "icon-images/memory.png"
+            },
+            {
+                "type": "Screen Details",
+                "description": "4.7 inch display utilizing Super AMOLED technology with a pixel density of 316 ppi (pixels per inch)",
+                "icon": "icon-images/screen-size.png"
+            },
+            {
+                "type": "Available Radios",
+                "description": "GSM bands: 850mHz, 900mHz, 1800mHz, 1900mHz\nUTMS bands: 850mHz, 900mHz, 1700/2100mHz, 1900mHz, 2100mHz\nHSDPA+ speed up to 42.2Mb/s\nHSUPA speed up to 5.76Mb/s",
+                "icon": "icon-images/radio.png"
+            }
+        ]
+    },
+    "Nexus 5":{
+        "name": "Nexus 5",
+        "headTitle": "Nexus 5 Specifications",
+        "footTitle": "Specifications",
+        "img": "nexus-images/4-nexus-5.png",
+        "device": [
+            {
+                "type": "Processor",
+                "description": "Quad core, 2260 MHz, Krait 400 CPU with an Adreno 330 GPU",
+                "icon": "icon-images/processor.png"
+            },
+            {
+                "type": "System Memory",
+                "description": "2048 MB RAM with 16 or 32 GB of built-in storage",
+                "icon": "icon-images/memory.png"
+            },
+            {
+                "type": "Screen Details",
+                "description": "5.0 inch display utilizing IPS LCD technology with a pixel density of 445 ppi (pixels per inch)",
+                "icon": "icon-images/screen-size.png"
+            },
+            {
+                "type": "Available Radios",
+                "description": "CDMA bands: 800mHz, 1900mHz\nGSM bands: 850mHz, 900mHz, 1800mHz, 1900mHz\nUTMS bands: 800mHz, 850mHz, 900mHz, 1700/2100mHz, 1900mHz, 2100mHz\nLTE bands: 800mHz (band 20), 850mHz (band 5), 900mHz (band 8), 1800mHz (band 3), 2100mHz (band 1), 2600mHz (band 7)\nLTE-A capable\nHSDPA+ speed up to 42.2Mb/s\nHSUPA speed up to 5.76Mb/s",
+                "icon": "icon-images/radio.png"
+            }
+        ]
+    }
+
+};
+
+exports.json = phoneData;
