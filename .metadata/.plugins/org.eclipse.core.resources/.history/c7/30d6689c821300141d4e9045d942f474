@@ -1,0 +1,93 @@
+// Phone Spec Page
+var phoneSpecWindow = Ti.UI.currentWindow;
+
+var pWidth = Ti.Platform.displayCaps.getPlatformWidth(),
+	layoutMarginSmall = 4,
+    layoutMargin = 8;
+    
+var basicView = Ti.UI.createScrollView({
+	layout: "vertical",
+	top: layoutMarginSmall,
+	width: pWidth,
+	contentWidth: pWidth,
+	showVerticalScrollIndicator: false,
+	showHorizontalScrollIndicator: false
+});
+
+// Image view to hold phone image
+var phoneImageView = Ti.UI.createImageView({
+    image: phoneSpecWindow.phoneData.image,
+    height: "50%",
+});
+
+var basicInfoLabel = Ti.UI.createLabel({
+	text: "OS Version: " + phoneSpecWindow.phoneData.os_version + "\nMSRP: " + phoneSpecWindow.phoneData.msrp,
+	font: {fontSize: 12, fontStyle: "bold"},
+	textAlign: "center",
+	top: layoutMargin
+});
+    
+// Table view for phone specifications
+var phoneSpecTable = Ti.UI.createTableView({
+	scrollable: false,
+	layout: "composite",
+	//style : Ti.UI.iPhone.TableViewStyle.GROUPED,
+	top : layoutMargin
+});
+
+var phoneSpecSection = Ti.UI.createTableViewSection();
+
+var iterator = 0;
+// Loop to fill in table
+for(var i in phoneSpecWindow.phoneData.specs) {
+//for(var i=0; i < phoneSpecWindow.phoneData.specs.length; i++){
+    // Dynamically create each table view row
+        var phoneSpecTableRow = Ti.UI.createTableViewRow({
+            title: phoneSpecWindow.phoneData.specs[i].title,
+            /*desc: jsonData[i].device[i2].description,
+            deviceName: jsonData[i].name,
+            img: jsonData[i].img,
+            icon: jsonData[i].device[i2].icon,*/
+            hasChild: true
+        });
+        
+        console.log("Row " + iterator + " Name: " + phoneSpecWindow.phoneData.specs[i].title + " i: " + i);
+
+        // Add row to section
+        phoneSpecSection.add(phoneSpecTableRow);
+        iterator++;
+    /*for(var i2=0; i2 < jsonData[i].device.length; i2++) {
+        // Dynamically create each table view row
+        var phoneTableRow = Ti.UI.createTableViewRow({
+            title: jsonData[i].device[i2].type,
+            desc: jsonData[i].device[i2].description,
+            deviceName: jsonData[i].name,
+            img: jsonData[i].img,
+            icon: jsonData[i].device[i2].icon,
+            hasChild: true
+        });
+
+        // Add row to section
+        phoneSection.add(phoneTableRow);
+    }*/
+
+    // Add each section to the table
+    //tableSections[sectionIterator] = phoneSection;
+    //sectionIterator++;
+}
+
+// Fill table with data
+phoneSpecTable.appendSection(phoneSpecSection);
+
+// Event listener for table
+//phoneDataTable.addEventListener("click", function(clickEvent){
+//    displayDescriptionView(clickEvent.source);
+//});
+
+basicView.add(phoneImageView);
+basicView.add(basicInfoLabel);
+basicView.add(phoneSpecTable);
+
+phoneSpecWindow.add(basicView);
+
+

@@ -1,0 +1,144 @@
+// Phone Spec Page
+var phoneSpecWindow = Ti.UI.currentWindow;
+
+var loadJsonData = require("phoneData"),
+	phoneDataJson = loadJsonData.phoneDataJson;
+
+/*// Local variables
+var tableSections = [],
+    sectionIterator = 0;
+
+// Table view for JSON content
+var phoneDataTable = Ti.UI.createTableView({
+    top: 0,
+    style: Ti.UI.iPhone.TableViewStyle.GROUPED
+});
+
+var displayPhoneSpecs = function(dataSource) {
+
+    // Window for description
+    var descWindow = Ti.UI.createWindow({
+        backgroundColor: "#fff",
+        backgroundImage: "background.png",
+        backgroundRepeat: true,
+        title: dataSource.title,
+        layout: "vertical"
+    });
+
+    // Label for phone name
+    var descPhoneName = Ti.UI.createLabel({
+        text: dataSource.deviceName,
+        font: {fontSize: 30, fontFamily: "Copperplate"},
+        textAlign: "center",
+        color: "#fff",
+        top: 5
+    });
+
+    // View to hold phone image and row icon
+    var descView = Ti.UI.createView({
+        top: 10,
+        height: "50%",
+        width: "100%",
+        backgroundColor: "#fff",
+        borderColor: "#aaa",
+        borderWidth: 1,
+        borderRadius: 10
+    });
+
+    // Image view to display phone image
+    var descPhoneImageView = Ti.UI.createImageView({
+        image: dataSource.img,
+        top: 5,
+        bottom: 5,
+        left: 0
+    });
+
+    // Image view to hold row icon
+    var descIconImageView = Ti.UI.createImageView({
+        image: dataSource.icon,
+        right: 10
+    });
+
+    // Label to display description
+    var descLabel = Ti.UI.createLabel({
+        text: dataSource.desc,
+        font: {fontSize: 12, fontFamily: "Optima-Regular"},
+        color: "#fff",
+        textAlign: "center",
+        top: 10,
+        left: 10,
+        right: 10
+    });
+
+    // Add each window element
+    descWindow.add(descPhoneName);
+
+    descWindow.add(descView);
+
+    descView.add(descPhoneImageView);
+    descView.add(descIconImageView);
+    descWindow.add(descLabel);
+
+    dataWindow.nav.openWindow(descWindow);
+};*/
+
+console.log("PhoneSpecWindow Title: " + phoneSpecWindow.phoneData.phone_name);
+console.log("PhoneSpecWindow image: " + phoneSpecWindow.phoneData.image);
+
+
+var phoneView = Ti.UI.createView({
+    top: 10,
+    height: "50%",
+    width: "100%",
+    backgroundColor: "#fff",
+    borderColor: "#aaa",
+    borderWidth: 1,
+    borderRadius: 10
+});
+    
+// Image view to hold phone image
+var phoneImageView = Ti.UI.createImageView({
+    image: phoneSpecWindow.phoneData.image,
+    height: Ti.UI.FILL
+});
+    
+phoneView.add(phoneImageView);
+phoneSpecWindow.add(phoneView);
+
+// Loop to fill in table
+/*for(var i in jsonData) {
+    // Dynamically create each table view section
+    var phoneSection = Ti.UI.createTableViewSection();
+    phoneSection.headerTitle = jsonData[i].headTitle;
+    phoneSection.footerTitle = jsonData[i].footTitle;
+
+    for(var i2=0; i2 < jsonData[i].device.length; i2++) {
+        // Dynamically create each table view row
+        var phoneTableRow = Ti.UI.createTableViewRow({
+            title: jsonData[i].device[i2].type,
+            desc: jsonData[i].device[i2].description,
+            deviceName: jsonData[i].name,
+            img: jsonData[i].img,
+            icon: jsonData[i].device[i2].icon,
+            hasChild: true
+        });
+
+        // Add row to section
+        phoneSection.add(phoneTableRow);
+    }
+
+    // Add each section to the table
+    tableSections[sectionIterator] = phoneSection;
+    sectionIterator++;
+}
+
+// Fill table with data
+phoneDataTable.setData(tableSections);
+
+// Event listener for table
+phoneDataTable.addEventListener("click", function(clickEvent){
+    displayDescriptionView(clickEvent.source);
+});
+
+phoneSpecWindow.add(phoneDataTable);*/
+

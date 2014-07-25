@@ -30,6 +30,21 @@ var navWindow = Ti.UI.iOS.createNavigationWindow({
 	window : mainWindow
 });
 
+// Function to open Phone Specification Info window
+var openSpecWindow = function() {
+		
+    var specWindow = Ti.UI.createWindow({
+        backgroundColor: bgColor,
+        backgroundImage: bgImage,
+        backgroundRepeat: true,
+        title: this.singlePhoneData.phone_name,
+        url: "phoneInfo.js",
+        phoneData: this.singlePhoneData
+    });
+
+    navWindow.openWindow(specWindow);
+};
+
 // Scroll view container for grid view
 var phoneGridContainer = Ti.UI.createScrollView({
     top: layoutMargin,
@@ -45,11 +60,11 @@ var phoneGridContainer = Ti.UI.createScrollView({
     borderWidth: 1
 });
 
-// Add each thumbnail to the galleryContainer
+// Add each phone image & name to the phoneGridContainer
 for (var i in phoneDataJson) {
-    var fileName = phoneDataJson[i].image,
+    var phoneImage = phoneDataJson[i].image,
     	phoneName = phoneDataJson[i].phone_name;
-    
+    	    
     // View to contain each image
     var imageWrapper = Ti.UI.createView({
         layout: "vertical",
@@ -57,16 +72,19 @@ for (var i in phoneDataJson) {
         height: thumbnailSize,
         backgroundColor: "#5ac8fa",
         borderColor: "#000",
-        borderWidth: 1
+        borderWidth: 1,
+        singlePhoneData: phoneDataJson[i]
+        
     });
     
     // Image view to add image into container
     var image = Ti.UI.createImageView({
-        image: fileName,
+        image: phoneImage,
         top: layoutMarginSmall,
         height: thumbnailSize - (layoutMargin * 3)
     });
     
+    // Label for phone name
     var imageLabel = Ti.UI.createLabel({
     	text: phoneName,
     	font: {fontSize: 10},
@@ -74,6 +92,9 @@ for (var i in phoneDataJson) {
     	textAlign: "center",
     	top: layoutMarginSmall
     });
+    
+    // Event listener for each phone element
+    imageWrapper.addEventListener("click", openSpecWindow);
 
     imageWrapper.add(image);
     imageWrapper.add(imageLabel);
