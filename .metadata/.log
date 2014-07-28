@@ -1026,3 +1026,173 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Mike/.ec
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
 !SUBENTRY 1 org.eclipse.ui 2 0 2014-07-22 15:10:24.663
 !MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.aptana.index.core 4 0 2014-07-27 14:30:14.856
+!MESSAGE (Build 3.2.3.201404181442) [ERROR]  Index error in readCategoryTable. 
+file = /Users/Mike/Documents/Full Sail University/Courses/13 - Mobile Interfaces & Usability/Titanium_Studio_Workspace/.metadata/.plugins/com.aptana.index.core/2090250678.index 
+offset = 1,113 
+ size = 1,818,713,959
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.HashMap.<init>(HashMap.java:187)
+	at java.util.HashMap.<init>(HashMap.java:199)
+	at com.aptana.internal.index.core.DiskIndex.readCategoryTable(DiskIndex.java:1109)
+	at com.aptana.internal.index.core.DiskIndex.addQueryResults(DiskIndex.java:304)
+	at com.aptana.index.core.Index.query(Index.java:547)
+	at com.aptana.js.internal.core.index.JSIndexReader.getType(JSIndexReader.java:478)
+	at com.aptana.js.core.index.JSIndexQueryHelper.getTypes(JSIndexQueryHelper.java:208)
+	at com.aptana.js.core.index.JSIndexQueryHelper.getTypeAncestorNames(JSIndexQueryHelper.java:235)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getTypePropertyMap(JSSymbolTypeInferrer.java:455)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getAdditionalProperties(JSSymbolTypeInferrer.java:274)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processProperties(JSSymbolTypeInferrer.java:484)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:382)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:436)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:305)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:301)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:227)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:104)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.core.build.UnifiedBuilder.buildFile(UnifiedBuilder.java:614)
+	at com.aptana.core.build.UnifiedBuilder.doBuildFiles(UnifiedBuilder.java:525)
+	at com.aptana.core.build.UnifiedBuilder.buildFiles(UnifiedBuilder.java:497)
+	at com.aptana.core.build.UnifiedBuilder.incrementalBuild(UnifiedBuilder.java:263)
+	at com.aptana.core.build.UnifiedBuilder.build(UnifiedBuilder.java:197)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+
+!ENTRY com.aptana.index.core 4 0 2014-07-27 14:30:30.725
+!MESSAGE (Build 3.2.3.201404181442) [ERROR]  Index error in readCategoryTable. 
+file = /Users/Mike/Documents/Full Sail University/Courses/13 - Mobile Interfaces & Usability/Titanium_Studio_Workspace/.metadata/.plugins/com.aptana.index.core/2090250678.index 
+offset = 1,113 
+ size = 1,818,713,959
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.HashMap.<init>(HashMap.java:187)
+	at java.util.HashMap.<init>(HashMap.java:199)
+	at com.aptana.internal.index.core.DiskIndex.readCategoryTable(DiskIndex.java:1109)
+	at com.aptana.internal.index.core.DiskIndex.addQueryResults(DiskIndex.java:304)
+	at com.aptana.index.core.Index.query(Index.java:547)
+	at com.aptana.js.internal.core.index.JSIndexReader.getType(JSIndexReader.java:478)
+	at com.aptana.js.core.index.JSIndexQueryHelper.getTypes(JSIndexQueryHelper.java:208)
+	at com.aptana.js.core.index.JSIndexQueryHelper.getTypeAncestorNames(JSIndexQueryHelper.java:235)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getTypePropertyMap(JSSymbolTypeInferrer.java:455)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getAdditionalProperties(JSSymbolTypeInferrer.java:274)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processProperties(JSSymbolTypeInferrer.java:484)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:382)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:436)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:305)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:301)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:227)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:104)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:337)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-07-27 14:30:32.610
+!MESSAGE An internal error occurred during: "Building workspace".
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.HashMap.<init>(HashMap.java:187)
+	at java.util.HashMap.<init>(HashMap.java:199)
+	at com.aptana.internal.index.core.DiskIndex.readCategoryTable(DiskIndex.java:1109)
+	at com.aptana.internal.index.core.DiskIndex.addQueryResults(DiskIndex.java:304)
+	at com.aptana.index.core.Index.query(Index.java:547)
+	at com.aptana.js.internal.core.index.JSIndexReader.getType(JSIndexReader.java:478)
+	at com.aptana.js.core.index.JSIndexQueryHelper.getTypes(JSIndexQueryHelper.java:208)
+	at com.aptana.js.core.index.JSIndexQueryHelper.getTypeAncestorNames(JSIndexQueryHelper.java:235)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getTypePropertyMap(JSSymbolTypeInferrer.java:455)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getAdditionalProperties(JSSymbolTypeInferrer.java:274)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processProperties(JSSymbolTypeInferrer.java:484)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:382)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:436)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:305)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer$1.map(JSSymbolTypeInferrer.java:1)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:432)
+	at com.aptana.core.util.CollectionsUtil.map(CollectionsUtil.java:466)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getScopeProperties(JSSymbolTypeInferrer.java:301)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.processParseResults(JSFileIndexingParticipant.java:227)
+	at com.aptana.js.core.index.JSFileIndexingParticipant.index(JSFileIndexingParticipant.java:104)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildFile(IndexBuildParticipant.java:132)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildFile(LazyBuildParticipant.java:72)
+	at com.aptana.core.build.UnifiedBuilder.buildFile(UnifiedBuilder.java:614)
+	at com.aptana.core.build.UnifiedBuilder.doBuildFiles(UnifiedBuilder.java:525)
+	at com.aptana.core.build.UnifiedBuilder.buildFiles(UnifiedBuilder.java:497)
+	at com.aptana.core.build.UnifiedBuilder.incrementalBuild(UnifiedBuilder.java:263)
+	at com.aptana.core.build.UnifiedBuilder.build(UnifiedBuilder.java:197)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+
+!ENTRY com.aptana.index.core 4 0 2014-07-27 14:30:32.847
+!MESSAGE (Build 3.2.3.201404181442) [ERROR]  Index error in readCategoryTable. 
+file = /Users/Mike/Documents/Full Sail University/Courses/13 - Mobile Interfaces & Usability/Titanium_Studio_Workspace/.metadata/.plugins/com.aptana.index.core/2090250678.index 
+offset = 5,646 
+ size = 1,702,391,919
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.HashMap.<init>(HashMap.java:187)
+	at java.util.HashMap.<init>(HashMap.java:199)
+	at com.aptana.internal.index.core.DiskIndex.readCategoryTable(DiskIndex.java:1109)
+	at com.aptana.internal.index.core.DiskIndex.addQueryResults(DiskIndex.java:304)
+	at com.aptana.index.core.Index.query(Index.java:547)
+	at com.aptana.js.internal.core.index.JSIndexReader.getProperties(JSIndexReader.java:432)
+	at com.aptana.js.core.index.JSIndexQueryHelper.getGlobals(JSIndexQueryHelper.java:169)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:705)
+	at com.aptana.js.core.parsing.ast.JSIdentifierNode.accept(JSIdentifierNode.java:33)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:276)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:257)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:600)
+	at com.aptana.js.core.parsing.ast.JSGetPropertyNode.accept(JSGetPropertyNode.java:34)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:276)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:257)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:600)
+	at com.aptana.js.core.parsing.ast.JSGetPropertyNode.accept(JSGetPropertyNode.java:34)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:276)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:257)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:600)
+	at com.aptana.js.core.parsing.ast.JSGetPropertyNode.accept(JSGetPropertyNode.java:34)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:276)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.getTypes(JSNodeTypeInferrer.java:257)
+	at com.aptana.js.core.inferencing.JSNodeTypeInferrer.visit(JSNodeTypeInferrer.java:790)
+	at com.aptana.js.core.parsing.ast.JSInvokeNode.accept(JSInvokeNode.java:31)
+	at com.aptana.js.core.parsing.ast.JSTreeWalker.visit(JSTreeWalker.java:176)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.processValues(JSSymbolTypeInferrer.java:635)
+	at com.aptana.js.internal.core.inferencing.JSSymbolTypeInferrer.getSymbolPropertyElement(JSSymbolTypeInferrer.java:375)
+!SESSION 2014-07-27 14:30:47.300 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Mike/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Mike/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-07-27 14:30:50.612
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2014-07-27 14:30:50.711
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-27 14:30:50.711
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-07-27 14:30:50.711
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'

@@ -1,0 +1,188 @@
+// Phone Spec Page
+var phoneSpecWindow = Ti.UI.currentWindow;
+
+var pWidth = Ti.Platform.displayCaps.getPlatformWidth(),
+	pHeight = Ti.Platform.displayCaps.getPlatformHeight(),
+	layoutMarginSmall = 4,
+    layoutMargin = 8;
+    
+var basicView = Ti.UI.createScrollView({
+	layout: "vertical",
+	top: layoutMarginSmall,
+	width: pWidth,
+	//contentHeight: pHeight,
+	contentWidth: pWidth,
+	showVerticalScrollIndicator: true
+});
+
+// Image view to hold phone image
+var phoneImageView = Ti.UI.createImageView({
+    image: phoneSpecWindow.phoneData.image,
+    height: "40%",
+});
+
+var basicInfoLabel = Ti.UI.createLabel({
+	text: "OS Version: " + phoneSpecWindow.phoneData.os_version + "\nMSRP: " + phoneSpecWindow.phoneData.msrp,
+	font: {fontSize: 12},
+	textAlign: "center",
+	top: layoutMargin
+});
+    
+// Table view for phone specifications
+var phoneSpecTable = Ti.UI.createTableView({
+	style : Ti.UI.iPhone.TableViewStyle.PLAIN,
+	top : layoutMarginSmall,
+	bottom: layoutMarginSmall
+});
+
+//var phoneSpecSection = Ti.UI.createTableViewSection();
+
+/*var phoneSpecContainer = Ti.UI.createView({
+	layout: "horizontal",
+	left: layoutMargin,
+	right: layoutMargin,
+	top: layoutMargin,
+	bottom: layoutMargin
+});*/
+
+/*addRemoveSection = function(dataSource) {
+	if(phoneSpecTable.getVisible()){
+		phoneSpecTable.hide();
+		//phoneSpecTable.removeSection(dataSource);
+	}
+};*/
+
+// Loop to fill in table
+for(var i in phoneSpecWindow.phoneData.specs) {
+	console.log("headerTitle: " + phoneSpecWindow.phoneData.specs[i].title);
+	
+	/*var phoneSpecHeaderView = Ti.UI.createView({
+		layout: "horizontal",
+		backgroundColor: "#5ac8fa",
+		borderColor: "#000",
+		borderWidth: 1,
+		height: 30
+	});
+	
+	var phoneSpecHeaderLabel = Ti.UI.createLabel({
+		text: phoneSpecWindow.phoneData.specs[i].title,
+		left: layoutMarginSmall
+	});
+	
+	var phoneSpecHeaderButton = Ti.UI.createButton({
+		title: "Show",
+		
+	});
+	
+	var phoneSpecDetails = Ti.UI.createLabel({
+		
+	});
+	
+	phoneSpecHeaderButton.addEventListener("click", function(){
+
+	});
+	
+	phoneSpecHeaderView.add(phoneSpecHeaderLabel);
+	phoneSpecHeaderView.add(phoneSpecHeaderButton);
+	
+	phoneSpecContainer.add(phoneSpecHeaderView);*/
+
+	
+	/*var phoneSpecSection = Ti.UI.createTableViewSection({
+		headerTitle: phoneSpecWindow.phoneData.specs[i].title
+	});*/
+	
+	var phoneSpecTableTitleRow = Titanium.UI.createTableViewRow({
+    		title: phoneSpecWindow.phoneData.specs[i].title,
+    		rowInfo: ""
+	});
+	//phoneSpecTable.add(phoneSpecTableTitleRow);
+	
+    // Dynamically create each table view row
+    rowInfo = [];
+    for(var i2=0; i2 < phoneSpecWindow.phoneData.specs[i].info.length; i2++){
+    	console.log("row title: " + phoneSpecWindow.phoneData.specs[i].info[i2]);
+    	rowInfo[i2] = rowInfo + phoneSpecWindow.phoneData.specs[i].info[i2];
+    	//phoneSpecTableTitleRow.rowInfo = phoneSpecWindow.phoneData.specs[i].info;
+    	
+    	/*var phoneSpecDetailView = Ti.UI.createView({
+			layout: "horizontal",
+			backgroundColor: "#fff",
+			//borderColor: "#000",
+			//borderWidth: 1,
+			height: 40
+		});
+	
+		var phoneSpecDetailLabel = Ti.UI.createLabel({
+			text: phoneSpecWindow.phoneData.specs[i].info[i2],
+			left: layoutMarginSmall
+		});
+	
+		phoneSpecDetailView.add(phoneSpecDetailLabel);
+		
+		phoneSpecContainer.add(phoneSpecDetailView);
+		
+		phoneSpecDetailView.setHeight('auto');*/
+    	
+    	var phoneSpecDetailedTable = Ti.UI.createTableView({
+			style : Ti.UI.iPhone.TableViewStyle.PLAIN,
+			top : layoutMarginSmall,
+			bottom: layoutMarginSmall
+		});
+
+    	var phoneSpecTableRow = Titanium.UI.createTableViewRow({
+    		title: phoneSpecWindow.phoneData.specs[i].info[i2]    		
+		});
+		//phoneSpecDetailedTable.appendRow(phoneSpecTableRow);
+		//phoneSpecTableTitleRow.add(phoneSpecDetailedTable);
+		//phoneSpecTableTitleRow.add(phoneSpecTableRow);
+		//phoneSpecSection.add(phoneSpecTableRow);
+		
+    }
+    phoneSpecTableTitleRow.rowInfo = rowInfo;
+    
+     phoneSpecTable.appendRow(phoneSpecTableTitleRow);
+        /*phoneSpecSection.addEventListener("click", function(clickEvent){
+        	addRemoveSection(clickEvent.source);
+        });*/
+        //phoneSpecTable.appendSection(phoneSpecSection);
+        //}
+}
+
+// Toggle Accordion
+phoneSpecTable.addEventListener('click', function(e)
+{
+	var displayedInfo = "",
+		iterator = 0;
+	for(var i in e.source.rowInfo){
+		displayedInfo =  displayedInfo + e.source.rowInfo[i] + "\n";
+		//iterator++;
+		console.log("i: " + i);
+	}
+	console.log(displayedInfo);
+	var dialog = Ti.UI.createAlertDialog({
+		message: displayedInfo,
+		ok: "Okay",
+		title: e.source.title
+	}).show();
+	//alert(displayedInfo);
+    //alert(B.helper.var_dump(innertable));
+    //if(e.index === 2){
+        /*if(e.source.height === 200){
+            e.source.height = 45;
+            e.source.setHeight('auto');
+        }else{
+
+            //alert(B.helper.var_dump(settingsTable.data[0].rows[3]));
+            e.source.height = 200;
+            e.source.setHeight('auto');
+        }*/
+    //}
+});
+
+basicView.add(phoneImageView);
+basicView.add(basicInfoLabel);
+basicView.add(phoneSpecTable);
+
+phoneSpecWindow.add(basicView);
+
