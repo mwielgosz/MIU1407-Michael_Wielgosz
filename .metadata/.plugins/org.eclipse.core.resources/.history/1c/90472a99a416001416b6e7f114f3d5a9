@@ -1,13 +1,11 @@
 // Phone Spec Page
 var phoneSpecWindow = Ti.UI.currentWindow;
 
-// Local variables
 var pWidth = Ti.Platform.displayCaps.getPlatformWidth(),
 	pHeight = Ti.Platform.displayCaps.getPlatformHeight(),
 	layoutMarginSmall = 4,
 	layoutMargin = 8;
 
-// Main view for window contents
 var basicView = Ti.UI.createView({
 	layout : "vertical",
 	top : layoutMarginSmall,
@@ -20,7 +18,6 @@ var phoneImageView = Ti.UI.createImageView({
 	height : "40%",
 });
 
-// Label for phone info
 var basicInfoLabel = Ti.UI.createLabel({
 	text : "OS Version: " + phoneSpecWindow.phoneData.os_version + "\nMSRP: " + phoneSpecWindow.phoneData.msrp,
 	font : { fontSize : 12 },
