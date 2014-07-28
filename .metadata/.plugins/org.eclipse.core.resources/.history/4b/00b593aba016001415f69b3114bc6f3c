@@ -48,6 +48,7 @@ for (var i in phoneSpecWindow.phoneData.specs) {
 	// Dynamically create each table view row
 	rowInfo = [];
 	for (var i2 = 0; i2 < phoneSpecWindow.phoneData.specs[i].info.length; i2++) {
+		console.log("row title: " + phoneSpecWindow.phoneData.specs[i].info[i2]);
 		rowInfo[i2] = phoneSpecWindow.phoneData.specs[i].info[i2];
 	}
 	
