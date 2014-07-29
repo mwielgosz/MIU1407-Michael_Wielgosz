@@ -1,9 +1,13 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1406587283452
+LAST_LAUNCH_TIMESTAMP=1406652709929
+RSS\ Reader\:launchMode=run
+RSS\ Reader\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
 Wielgosz_Michael_AboutMe\:launchMode=run
 Wielgosz_Michael_AboutMe\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch)
 Wielgosz_Michael_InformationalApp\:launchMode=run
 Wielgosz_Michael_InformationalApp\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch)
+Wielgosz_Michael_UtilityApplication\:launchMode=run
+Wielgosz_Michael_UtilityApplication\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.iPhone Retina (4 inch)
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103
