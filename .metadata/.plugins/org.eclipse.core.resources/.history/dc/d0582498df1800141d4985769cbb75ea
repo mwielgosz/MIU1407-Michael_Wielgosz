@@ -1,0 +1,69 @@
+/*
+ * Michael Wielgosz
+ * Mobile Interfaces & Usability
+ * Term 1407
+ * Utility Application
+ */
+
+// Global variables
+var bgColor = "#1E1E1E",
+	bgImage = "background.png",
+	layoutMarginSmall = 4,
+	layoutMarginNormal = 8;
+	
+// Set the default background color/image
+Ti.UI.setBackgroundColor(bgColor);
+
+// Main app window
+var mainWindow = Ti.UI.createWindow({
+	title : "Utility",
+	backgroundImage : bgImage,
+	backgroundRepeat : true
+});
+
+// NavigationWindow object for iOS
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window : mainWindow
+});
+
+var loginView = Ti.UI.createView({
+	backgroundColor : "#000",
+	height: "30%",
+	width : "80%",
+	center : true,
+	borderColor : "#aaa",
+	borderWidth : 1,
+	borderRadius: 8
+});
+
+var usernameLabel = Ti.UI.createLabel({
+	text: "Username",
+	font: {fontSize:12, fontWeight:'bold'},
+	color : "#aaa",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign : "left"
+});
+loginView.add(usernameLabel);
+
+var usernameTextView = Ti.UI.createTextArea({
+	borderWidth: 2,
+  	borderColor: '#bbb',
+  	borderRadius: 5,
+  	color: '#888',
+  	font: {fontSize:12, fontWeight:'bold'},
+  	keyboardType: Ti.UI.KEYBOARD_APPEARANCE_DEFAULT,
+  	returnKeyType: Ti.UI.RETURNKEY_GO,
+  	textAlign: 'left',
+  	value: 'Type your username',
+  	top: layoutMarginNormal,
+  	width: 100, height : 20
+});
+loginView.add(usernameTextView);
+
+mainWindow.add(loginView);
+
+navWindow.open();
+
+
+

@@ -1,0 +1,31 @@
+/*
+ * Michael Wielgosz
+ * Mobile Interfaces & Usability
+ * Term 1407
+ * Utility Application
+ */
+
+// Global variables
+var bgColor = "#1E1E1E",
+	bgImage = "background.png";
+	
+// Set the default background color/image
+Ti.UI.setBackgroundColor(bgColor);
+Ti.UI.setBackgroundImage(bgImage);
+
+var win1 = Titanium.UI.createWindow({  
+    title:'Tab 1',
+    backgroundColor:'#000'
+});
+
+var label1 = Titanium.UI.createLabel({
+	color:'#999',
+	text:'I am Window 1',
+	font:{fontSize:20,fontFamily:'Helvetica Neue'},
+	textAlign:'center',
+	width:'auto'
+});
+
+win1.add(label1);
+
+
