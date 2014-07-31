@@ -1,0 +1,65 @@
+// Create new accoung page
+var createAccountWindow = Ti.UI.currentWindow;
+
+// Local variables
+var layoutMarginSmall = 4,
+	layoutMarginNormal = 8,
+	pWidth = Ti.Platform.displayCaps.getPlatformWidth();
+	
+// Main view for window contents
+var createAccountView = Ti.UI.createView({
+	layout : "vertical",
+	//backgroundColor: "#000",
+	//borderRadius: 8,
+	//borderWidth: 1,
+	//borderColor: "#000",
+	//top : layoutMarginNormal,
+	height: "100%",
+	width : pWidth
+});
+var requiredFieldsLabel = Ti.UI.createLabel({
+	text: "* Required Fields",
+	font: {fontSize:14},
+	color : "#000",
+	center: true,
+	top: layoutMarginNormal
+});
+createAccountView.add(requiredFieldsLabel);
+
+// Line to separate username from password views
+var separatorLine = Ti.UI.createView({
+	height : 1,
+	backgroundColor : "#888",
+	width: "75%",
+	top: layoutMarginNormal,
+});
+createAccountView.add(separatorLine);
+
+var usernameLabel = Ti.UI.createLabel({
+	text: "Username: *",
+	font: {fontSize:14},
+	color : "#000",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+createAccountView.add(usernameLabel);
+
+// Username text field
+var usernameTextField = Ti.UI.createTextField({
+  	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  	color: '#888',
+  	font: {fontSize:12},
+  	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
+  	autocorrect: false,
+  	textAlign: "left",
+  	hintText: "Type your username",
+  	top: layoutMarginSmall,
+  	width: "90%", 
+  	height: 25,
+});
+createAccountView.add(usernameTextField);
+
+createAccountWindow.add(createAccountView);
+

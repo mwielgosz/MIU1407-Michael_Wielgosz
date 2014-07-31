@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Wielgosz_Michael_UtilityApplication/Resources/users.js&apos; to &apos;userJSON.js&apos;" description="Rename resource &apos;users.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/users.js" name="userJSON.js" stamp="1406836839940" updateReferences="true"/>
+</session>

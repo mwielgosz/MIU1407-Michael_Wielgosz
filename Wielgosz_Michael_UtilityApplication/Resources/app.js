@@ -11,12 +11,32 @@ var bgColor = "#1E1E1E",
 	layoutMarginSmall = 4,
 	layoutMarginNormal = 8;
 	
+// JSON data
+//Ti.include("userJSON.js");
+var loadJsonData = require("userJSON"),
+	userData = loadJsonData.userJSON;
+	
 // Set the default background color/image
 Ti.UI.setBackgroundColor(bgColor);
 
+// Function to open new window
+var openNewWindow = function(windowTitle, windowURL, userData) {
+		
+    var newWindow = Ti.UI.createWindow({
+        backgroundColor: bgColor,
+        backgroundImage: bgImage,
+        backgroundRepeat: true,
+        title: windowTitle,
+        url: windowURL,
+        userData: userData
+    });
+
+    navWindow.openWindow(newWindow);
+};
+
 // Main app window
 var mainWindow = Ti.UI.createWindow({
-	title : "Utility",
+	title : "App Login",
 	backgroundImage : bgImage,
 	backgroundRepeat : true
 });
@@ -32,10 +52,9 @@ var loginView = Ti.UI.createView({
 	height: "22%",
 	width: "80%",
 	center: true,
-	borderColor : "#fff",
+	borderColor : "#000",
 	borderWidth : 1,
-	borderRadius: 8,
-	zIndex: 0
+	borderRadius: 8
 });
 
 // Label for username text
@@ -55,7 +74,7 @@ var usernameTextField = Ti.UI.createTextField({
   	color: '#888',
   	font: {fontSize:12},
   	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
-  	returnKeyType: Ti.UI.RETURNKEY_NEXT,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
   	autocorrect: false,
   	textAlign: "left",
   	hintText: "Type your username",
@@ -92,7 +111,7 @@ var passwordTextField = Ti.UI.createTextField({
   	color: '#888',
   	font: {fontSize:12},
   	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
-  	returnKeyType: Ti.UI.RETURNKEY_DONE,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
   	autocorrect: false,
   	passwordMask: true,
   	textAlign: "left",
@@ -113,14 +132,43 @@ var loginButton = Ti.UI.createButton({
 });
 loginView.add(loginButton);
 
+// Event listener for login button
+loginButton.addEventListener("click", function(){
+	var correctUser = false,
+		correctPassword = false;
+		
+	// Check for correct username
+	if (usernameTextField.value === userData.users.username) {
+		correctUser = true;
+	}
+	
+	// Check for correct password
+	if(passwordTextField.value === userData.users.password) {
+		correctPassword = true;
+	}
+	
+	// Display alert based on correct username & password
+	if(correctUser && correctPassword) {
+		alert("Login Successful");
+		openNewWindow("Login Success", "displayInfo.js");
+	} else {
+		alert("Incorrect username or password\nPlease try again");
+	}
+});
+
 // Button for create account
 var createAccountButton = Ti.UI.createButton({
 	title: "Create Account",
 	font: {fontSize:12},
-	top: passwordTextField.top + passwordTextField.height + layoutMarginNormal + layoutMarginSmall,
+	top: passwordTextField.top + passwordTextField.height + layoutMarginNormal + 1,
 	right: layoutMarginNormal
 });
 loginView.add(createAccountButton);
+
+// Event listener for login button
+createAccountButton.addEventListener("click", function(){
+	openNewWindow("Create Account", "createAccount.js", userData);
+});
 
 mainWindow.add(loginView);
 

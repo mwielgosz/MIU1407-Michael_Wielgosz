@@ -1,0 +1,8 @@
+// JSON data for user login information
+
+var userData = {
+	"username" : "mike",
+	"password" : "miu1407"
+};
+
+//exports.userJSON = userData;

@@ -1,0 +1,2 @@
+// Data Page
+var dataWindow = Ti.UI.currentWindow;
