@@ -180,12 +180,11 @@ var createButtonView = Ti.UI.createView({
 	backgroundColor: "#fff",
 	height: 30,
 	width: 135,
-	top: (layoutMarginNormal * 2),
+	top: layoutMarginNormal,
 	center: true,
 	borderColor : "#888",
 	borderWidth : 1,
-	borderRadius: 8,
-	left: layoutMarginNormal
+	borderRadius: 8
 });
 createAccountView.add(createButtonView);
 

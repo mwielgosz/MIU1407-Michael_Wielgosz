@@ -180,7 +180,7 @@ var createButtonView = Ti.UI.createView({
 	backgroundColor: "#fff",
 	height: 30,
 	width: 135,
-	top: (layoutMarginNormal * 2),
+	top: layoutMarginNormal * 2,
 	center: true,
 	borderColor : "#888",
 	borderWidth : 1,
