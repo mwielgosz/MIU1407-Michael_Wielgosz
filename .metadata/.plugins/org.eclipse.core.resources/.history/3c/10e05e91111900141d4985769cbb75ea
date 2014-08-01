@@ -1,0 +1,129 @@
+// Display user info page
+var displayInfoWindow = Ti.UI.currentWindow;
+
+displayInfoWindow.title = displayInfoWindow.username;
+
+// Local variables
+var layoutMarginSmall = 4,
+	layoutMarginNormal = 8,
+	pWidth = Ti.Platform.displayCaps.getPlatformWidth();
+	
+// Main view for window contents
+var displayAccountView = Ti.UI.createScrollView({
+	layout : "vertical",
+	height: "100%",
+	width : pWidth,
+	showHorizontalScrollIndicator: true
+});
+
+// Label for username
+var usernameLabel = Ti.UI.createLabel({
+	text: "Username:",
+	font: {fontSize:14},
+	color : "#fff",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+displayAccountView.add(usernameLabel);
+
+// Username text field
+var usernameTextField = Ti.UI.createLabel({
+	text: displayInfoWindow.userData.users.username,
+	font: {fontSize:12},
+  	color: '#fff',
+  	left: layoutMarginNormal * 2,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+displayAccountView.add(usernameTextField);
+
+// Label for password
+var passwordLabel = Ti.UI.createLabel({
+	text: "Password:",
+	font: {fontSize:14},
+	color : "#fff",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+displayAccountView.add(passwordLabel);
+
+// Password text field
+var passwordTextField = Ti.UI.createLabel({
+  	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  	color: '#888',
+  	font: {fontSize:12},
+  	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
+  	clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+  	value: displayInfoWindow.userData.users.password,
+  	autocorrect: false,
+  	textAlign: "left",
+  	hintText: "No spaces",
+  	top: layoutMarginSmall,
+  	width: "95%", 
+  	height: 25
+});
+displayAccountView.add(passwordTextField);
+
+// Label for first name
+var firstNameLabel = Ti.UI.createLabel({
+	text: "First Name:",
+	font: {fontSize:14},
+	color : "#fff",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+displayAccountView.add(firstNameLabel);
+
+// First Name text field
+var firstNameTextField = Ti.UI.createLabel({
+  	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  	color: '#888',
+  	font: {fontSize:12},
+  	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
+  	clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+  	value: displayInfoWindow.userData.users.firstName,
+  	autocorrect: false,
+  	textAlign: "left",
+  	hintText: "Type your first name",
+  	top: layoutMarginSmall,
+  	width: "95%", 
+  	height: 25
+});
+displayAccountView.add(firstNameTextField);
+
+// Label for last name
+var lastNameLabel = Ti.UI.createLabel({
+	text: "Last Name:",
+	font: {fontSize:14},
+	color : "#fff",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+displayAccountView.add(lastNameLabel);
+
+// Last Name text field
+var lastNameTextField = Ti.UI.createLabel({
+  	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  	color: '#888',
+  	font: {fontSize:12},
+  	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
+  	clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+  	value: displayInfoWindow.userData.users.lastName,
+  	autocorrect: false,
+  	textAlign: "left",
+  	hintText: "Type your last name",
+  	top: layoutMarginSmall,
+  	width: "95%", 
+  	height: 25
+});
+displayAccountView.add(lastNameTextField);
+
+displayInfoWindow.add(displayAccountView);
+

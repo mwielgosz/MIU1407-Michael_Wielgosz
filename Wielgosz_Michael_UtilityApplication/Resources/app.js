@@ -150,7 +150,7 @@ loginButton.addEventListener("click", function(){
 	// Display alert based on correct username & password
 	if(correctUser && correctPassword) {
 		alert("Login Successful");
-		openNewWindow("Login Success", "displayInfo.js");
+		openNewWindow("User \""+ usernameTextField.value + "\"", "displayInfo.js", userData);
 	} else {
 		alert("Incorrect username or password\nPlease try again");
 	}

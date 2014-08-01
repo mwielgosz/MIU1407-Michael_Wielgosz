@@ -1,4 +1,4 @@
-// Create new accoung page
+// Create new account page
 var createAccountWindow = Ti.UI.currentWindow;
 
 // Local variables
@@ -13,8 +13,10 @@ var createAccountView = Ti.UI.createScrollView({
 	width : pWidth,
 	showHorizontalScrollIndicator: true
 });
+
+// Label for required fields
 var requiredFieldsLabel = Ti.UI.createLabel({
-	text: "* Required Fields",
+	text: "* Indicates a required field",
 	font: {fontSize:14},
 	color : "#fff",
 	center: true,
@@ -173,12 +175,25 @@ var lastNameTextField = Ti.UI.createTextField({
 });
 createAccountView.add(lastNameTextField);
 
+// View to contain login elements
+var createButtonView = Ti.UI.createView({
+	backgroundColor: "#fff",
+	height: 30,
+	width: 135,
+	top: layoutMarginNormal,
+	center: true,
+	borderColor : "#888",
+	borderWidth : 1,
+	borderRadius: 8
+});
+createAccountView.add(createButtonView);
+
 // Button for login
 var createButton = Ti.UI.createButton({
-	title: "Create",
+	title: "Create Account",
 	font: {fontSize:16}
 });
-createAccountView.add(createButton);
+createButtonView.add(createButton);
 
 // Event listener for login button
 createButton.addEventListener("click", function(){
@@ -197,8 +212,10 @@ createButton.addEventListener("click", function(){
 		validUsername = true;
 	}
 	
-	// Check passwords
+	// Check if passwords match
 	if(passwordTextField.getValue() === retypePasswordTextField.getValue()) {
+		
+		// Check is password is valid
 		if((passwordTextField.getValue() === "") || passwordTextField.getValue().indexOf(" ") >= 0){
 			passwordLabel.color = "red";
 			retypePasswordLabel.color = "red";

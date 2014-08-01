@@ -1,0 +1,289 @@
+// Create new accoung page
+var createAccountWindow = Ti.UI.currentWindow;
+
+// Local variables
+var layoutMarginSmall = 4,
+	layoutMarginNormal = 8,
+	pWidth = Ti.Platform.displayCaps.getPlatformWidth();
+	
+// Main view for window contents
+var createAccountView = Ti.UI.createScrollView({
+	layout : "vertical",
+	height: "100%",
+	width : pWidth,
+	showHorizontalScrollIndicator: true
+});
+var requiredFieldsLabel = Ti.UI.createLabel({
+	text: "* Required Fields",
+	font: {fontSize:14},
+	color : "#fff",
+	center: true,
+	top: layoutMarginNormal
+});
+createAccountView.add(requiredFieldsLabel);
+
+// Line to separate username from password views
+var separatorLine = Ti.UI.createView({
+	height : 1,
+	backgroundColor : "#888",
+	width: "75%",
+	top: layoutMarginNormal,
+});
+createAccountView.add(separatorLine);
+
+// Label for username
+var usernameLabel = Ti.UI.createLabel({
+	text: "Username: *",
+	font: {fontSize:14},
+	color : "#fff",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+createAccountView.add(usernameLabel);
+
+// Username text field
+var usernameTextField = Ti.UI.createTextField({
+  	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  	color: '#888',
+  	font: {fontSize:12},
+  	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
+  	clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+  	autocorrect: false,
+  	textAlign: "left",
+  	hintText: "1-10 characters, no spaces",
+  	top: layoutMarginSmall,
+  	width: "95%", 
+  	height: 25
+});
+createAccountView.add(usernameTextField);
+
+// Label for password
+var passwordLabel = Ti.UI.createLabel({
+	text: "Password: *",
+	font: {fontSize:14},
+	color : "#fff",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+createAccountView.add(passwordLabel);
+
+// Password text field
+var passwordTextField = Ti.UI.createTextField({
+  	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  	color: '#888',
+  	font: {fontSize:12},
+  	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
+  	clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+  	passwordMask: true,
+  	autocorrect: false,
+  	textAlign: "left",
+  	hintText: "No spaces",
+  	top: layoutMarginSmall,
+  	width: "95%", 
+  	height: 25
+});
+createAccountView.add(passwordTextField);
+
+// Label for retype password
+var retypePasswordLabel = Ti.UI.createLabel({
+	text: "Retype Password: *",
+	font: {fontSize:14},
+	color : "#fff",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+createAccountView.add(retypePasswordLabel);
+
+// Retype Password text field
+var retypePasswordTextField = Ti.UI.createTextField({
+  	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  	color: '#888',
+  	font: {fontSize:12},
+  	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
+  	clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+  	passwordMask: true,
+  	autocorrect: false,
+  	textAlign: "left",
+  	hintText: "Passwords must match",
+  	top: layoutMarginSmall,
+  	width: "95%", 
+  	height: 25
+});
+createAccountView.add(retypePasswordTextField);
+
+// Label for first name
+var firstNameLabel = Ti.UI.createLabel({
+	text: "First Name: *",
+	font: {fontSize:14},
+	color : "#fff",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+createAccountView.add(firstNameLabel);
+
+// First Name text field
+var firstNameTextField = Ti.UI.createTextField({
+  	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  	color: '#888',
+  	font: {fontSize:12},
+  	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
+  	clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+  	autocorrect: false,
+  	textAlign: "left",
+  	hintText: "Type your first name",
+  	top: layoutMarginSmall,
+  	width: "95%", 
+  	height: 25
+});
+createAccountView.add(firstNameTextField);
+
+// Label for last name
+var lastNameLabel = Ti.UI.createLabel({
+	text: "Last Name: *",
+	font: {fontSize:14},
+	color : "#fff",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+createAccountView.add(lastNameLabel);
+
+// Last Name text field
+var lastNameTextField = Ti.UI.createTextField({
+  	borderStyle : Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  	color: '#888',
+  	font: {fontSize:12},
+  	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+  	returnKeyType: Ti.UI.RETURNKEY_DEFAULT,
+  	clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+  	autocorrect: false,
+  	textAlign: "left",
+  	hintText: "Type your last name",
+  	top: layoutMarginSmall,
+  	width: "95%", 
+  	height: 25
+});
+createAccountView.add(lastNameTextField);
+
+// Label for birthday
+var lastNameLabel = Ti.UI.createLabel({
+	text: "Birthday:",
+	font: {fontSize:14},
+	color : "#fff",
+	left: layoutMarginNormal,
+	top: layoutMarginNormal,
+	textAlign: "left"
+});
+createAccountView.add(lastNameLabel);
+
+// Get current date
+var date = new Date();
+var d  = date.getDate();
+var day = (d < 10) ? '0' + d : d;
+var m = date.getMonth();
+var month = (m < 10) ? '0' + m : m;
+var yy = date.getYear();
+var year = (yy < 1000) ? yy + 1900 : yy;
+
+// Picker for birthday
+var birthdayPicker = Ti.UI.createPicker({
+  type:Ti.UI.PICKER_TYPE_DATE,
+  minDate:new Date(1900,0,1),
+  maxDate:new Date(2014,11,31),
+  value:new Date(year,month,day),
+  top: layoutMarginSmall
+});
+createAccountView.add(birthdayPicker);
+
+birthdayPicker.addEventListener('change',function(e){
+  Ti.API.info("User selected date: " + e.value.day);
+});
+
+// Button for login
+var createButton = Ti.UI.createButton({
+	title: "Create",
+	font: {fontSize:16}
+});
+createAccountView.add(createButton);
+
+// Event listener for login button
+createButton.addEventListener("click", function(){
+	var validUsername = false,
+		validPassword = false,
+		validFirstName = false,
+		validLastName = false;
+	
+	// Check username
+	if((usernameTextField.getValue() === "") || (usernameTextField.getValue().length > 10) || usernameTextField.getValue().indexOf(" ") >= 0){
+		usernameLabel.color = "red";
+		usernameLabel.text = "Username *\n(more than 10 characters or has spaces)";
+	} else {
+		usernameLabel.color = "white";
+		usernameLabel.text = "Username *";
+		validUsername = true;
+	}
+	
+	// Check passwords
+	if(passwordTextField.getValue() === retypePasswordTextField.getValue()) {
+		if((passwordTextField.getValue() === "") || passwordTextField.getValue().indexOf(" ") >= 0){
+			passwordLabel.color = "red";
+			retypePasswordLabel.color = "red";
+			passwordLabel.text = "Password *\n(no password or has spaces)";
+		} else {
+			passwordLabel.color = "white";
+			passwordLabel.text = "Password *";
+			retypePasswordLabel.color = "white";
+			retypePasswordLabel.text = "Retype Password *";
+			validPassword = true;
+		}
+	} else {
+		passwordLabel.color = "red";
+		passwordLabel.text = "Password *\n(passwords do not match)";
+		retypePasswordLabel.color = "red";
+	}
+	
+	// Check first name
+	if(firstNameTextField.getValue() === ""){
+		firstNameLabel.color = "red";
+		firstNameLabel.text = "First Name *\n(required field)";
+	} else {
+		firstNameLabel.color = "white";
+		firstNameLabel.text = "First Name *";
+		validFirstName = true;
+	}
+	
+	// Check last name
+	if(lastNameTextField.getValue() === ""){
+		lastNameLabel.color = "red";
+		lastNameLabel.text = "Last Name *\n(required field)";
+	} else {
+		lastNameLabel.color = "white";
+		lastNameLabel.text = "Last Name *";
+		validLastName = true;
+	}
+	
+	// Check if all input values are valid
+	if(validUsername && validPassword && validFirstName && validLastName) {
+		//var jsonStr = createAccountWindow.userData.users.toString;
+		//alert(jsonStr);
+		//var obj = JSON.parse(jsonStr);
+		//createAccountWindow.userData.users. // = {"username" : usernameTextField.getValue(), "password" : passwordTextField.getValue(), "firstName" : firstNameTextField.getValue(), "lastName" : lastNameTextField.getValue()};
+		//jsonStr = JSON.stringify(obj);
+		//alert(obj);
+		//createAccountWindow.userData.users
+		alert(createAccountWindow.userData.users);
+		alert("Account sucessfully created!");
+		createAccountWindow.close();
+	}
+});
+
+createAccountWindow.add(createAccountView);
+

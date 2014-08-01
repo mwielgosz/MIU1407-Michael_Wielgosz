@@ -1,64 +1,101 @@
 // Display user info page
 var displayInfoWindow = Ti.UI.currentWindow;
 
-// create tab group
-var tabGroup = Titanium.UI.createTabGroup();
-
-
-//
-// create base UI tab and root window
-//
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
-});
-var tab1 = Titanium.UI.createTab({  
-    icon:'KS_nav_views.png',
-    title:'Tab 1',
-    window:win1
-});
-
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+// Local variables
+var layoutMarginSmall = 4,
+	layoutMarginNormal = 8,
+	pWidth = Ti.Platform.displayCaps.getPlatformWidth();
+	
+// Main view for window contents
+var displayAccountView = Ti.UI.createView({
+	center: true,
+	backgroundColor: "#fff",
+	height: "45%",
+	width: "80%",
+	center: true,
+	borderColor : "#000",
+	borderWidth : 1,
+	borderRadius: 8
 });
 
-win1.add(label1);
-
-//
-// create controls tab and root window
-//
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
+// View to display labels
+var labelView = Ti.UI.createView({
+	layout : "vertical"
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+// Label for username
+var usernameLabel = Ti.UI.createLabel({
+	text: "Username:",
+	font: {fontSize:18, fontWeight:"bold"},
+	color : "#000",
+	top: layoutMarginNormal
 });
+labelView.add(usernameLabel);
 
-win2.add(label2);
+// Username data
+var usernameTextField = Ti.UI.createLabel({
+	text: displayInfoWindow.userData.users.username,
+	font: {fontSize:14},
+  	color: "#888",
+	top: layoutMarginSmall
+});
+labelView.add(usernameTextField);
 
+// Label for password
+var passwordLabel = Ti.UI.createLabel({
+	text: "Password:",
+	font: {fontSize:18, fontWeight:"bold"},
+	color : "#000",
+	top: layoutMarginNormal
+});
+labelView.add(passwordLabel);
 
+// Password data
+var passwordTextField = Ti.UI.createLabel({
+	text: displayInfoWindow.userData.users.password,
+	font: {fontSize:14},
+  	color: "#888",
+	top: layoutMarginSmall
+});
+labelView.add(passwordTextField);
 
-//
-//  add tabs
-//
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
+// Label for first name
+var firstNameLabel = Ti.UI.createLabel({
+	text: "First Name:",
+	font: {fontSize:18, fontWeight:"bold"},
+	color : "#000",
+	top: layoutMarginNormal
+});
+labelView.add(firstNameLabel);
 
+// First Name data
+var firstNameTextField = Ti.UI.createLabel({
+	text: displayInfoWindow.userData.users.firstName,
+	font: {fontSize:14},
+  	color: "#888",
+	top: layoutMarginSmall
+});
+labelView.add(firstNameTextField);
 
-// open tab group
-tabGroup.open();
+// Label for last name
+var lastNameLabel = Ti.UI.createLabel({
+	text: "Last Name:",
+	font: {fontSize:18, fontWeight:"bold"},
+	color : "#000",
+	top: layoutMarginNormal
+});
+labelView.add(lastNameLabel);
+
+// Last Name data
+var lastNameTextField = Ti.UI.createLabel({
+	text: displayInfoWindow.userData.users.lastName,
+	font: {fontSize:14},
+  	color: "#888",
+	top: layoutMarginSmall
+});
+labelView.add(lastNameTextField);
+
+displayAccountView.add(labelView);
+
+displayInfoWindow.add(displayAccountView);
+
